@@ -5,3 +5,112 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, san-serif';
 }
+body{
+    background-color: #d6d7d5;
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.container .color{
+    list-style: none;
+    padding: 0.5rem;
+    border-radius: 7px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 1px 20px rgba(52,87,220,0.08);
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.color:active{
+    transform:scale(0.95);
+}
+.rect-box{
+    width: 16rem;
+    height: 16.5rem;
+    background-color: #0d63b3;
+    border-radius:0.5rem;
+}
+.color:hover .rect-box{
+    filter:brightness(106%);
+    -webkit-filter:brightness(106%);
+}
+.hex-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 0.5rem auto;
+    color:rgb(111, 4, 81)
+}
+.btn-wrapper{
+    height: 50px;
+    margin: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-wrapper .refresh-btn{
+    position: fixed;
+    left: 45%;
+    bottom: 0;
+    transform: translateY(-50%);
+    outline:none;
+    font-size:1.1rem;
+    padding: 0.7rem 1.2rem;
+    border-radius:5px;
+    background-color: #0d63b3;
+    color:white;
+    box-shadow: 0 1px 20px rgba(52,87,220,0.08);
+    border:2px solid #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-wrapper .refresh-btn:hover{
+    background-color:#20476b
+}
+@media screen and (width <= 510px){
+    .conatiner{
+        margin: 10px;
+    }
+    .color{
+        margin: 8px;
+        padding: 5px;
+    }
+    .rect-box{
+        width: 145px;
+        height: 148px;
+    }
+    .hex-value{
+        font-size: 1.05rem;
+    }
+    .refresh-btn{
+        left:0;
+        font-size:0.9rem;
+        padding: 0.5rem;
+    }
+}
+@media screen and (width <= 425px){
+    .color{
+        margin: 5px;
+        padding:3px;
+    }
+    .rect-box{
+        width: 300px;
+        height: 180px;
+    }
+}
+@media screen and (width <= 320px){
+    .color{
+        margin: 2px;
+        padding:2px;
+    }
+    .rect-box{
+        width: 180px;
+        height: 140px;
+    }
+}
