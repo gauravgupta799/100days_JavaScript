@@ -1,2 +1,6 @@
 # 100days_JavaScript
-<h2> Random Color Picker </h2>
+<ol>
+ <li><h2> Random Color Picker : 18<sub>th</sub> January, 2023</h2></li>
+ <li><h2> Screenshot Preview :  19<sub>th</sub> January, 2023</h2></li>
+</ol>
+
