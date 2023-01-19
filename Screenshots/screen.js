@@ -5,9 +5,9 @@ const closeIcon = document.querySelector("#close-icon")
 const captureScreen =async ()=>{
   try {
     const stream = await navigator.mediaDevices.getDisplayMedia({preferCurrentTab:true})
-    console.log(stream);
+    // console.log(stream);
     const video = document.createElement("video");
-    console.log(video)
+    // console.log(video)
     video.addEventListener("loadedmetadata", ()=>{
         const canvas = document.createElement("canvas");
         const ctx = canvas.getContext("2d");
@@ -33,4 +33,3 @@ closeIcon.addEventListener('click', ()=>{
     screenshotPreview.classList.remove("show");
 })
 btn.addEventListener("click", captureScreen)
-
