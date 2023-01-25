@@ -3,29 +3,22 @@ let images = [
     "dice-4.png","dice-5.png","dice-6.png",
 ];
 
-let dice = document.querySelector("img");
-let total = document.querySelector("#total")
+let dice = document.querySelectorAll("img"),
+    total = document.querySelector("#total"),
+    dice1 = document.querySelector("#dice-1"),
+    dice2 = document.querySelector("#dice-2")
+// console.log(dice1,dice2);
 
 function roll(){
-    dice.forEach(function(die){
-        die.classList.add('.shake');
-    });
-    setTimeout(function() {
-        dice.forEach(function(die){
-            die.classList.remove('.shake');
-        });
+    dice.forEach( die => die.classList.add('shake'));
+    setTimeout(()=> {
+        dice.forEach(die => die.classList.remove('shake'));
         let dieOneValue = Math.floor(Math.random() * 6);
         let dieTwoValue = Math.floor(Math.random() * 6);
-        // console.log(dieOneValue, dieTwoValue)
-        document.querySelector("#dice-1").setAttribute(
-            'src', images[dieOneValue]
-        );
-        document.querySelector("#dice-2").setAttribute(
-            'src', images[dieTwoValue]
-        );
-        total.innerHTML = "Your roll is " + ((dieOneValue + 1) + (dieTwoValue + 1)) 
-
-    },1000)
+        dice1.setAttribute( 'src', "images/" + images[dieOneValue] );
+        dice2.setAttribute( 'src', "images/" + images[dieTwoValue] );
+        total.innerHTML = "Your roll is " + ((dieOneValue + 1) + (dieTwoValue + 1));
+    },1000);
 }
 
 roll();
