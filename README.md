@@ -6,5 +6,6 @@
  <li><h2> StopWatch :  21<sup>th</sup> January, 2023</h2></li>
  <li><h2> TemperatureConverter :  22<sup>th</sup> January, 2023</h2></li>
  <li><h2> Analog Cock :  23<sup>th</sup> January, 2023</h2></li>
+ <li><h2> Dice Roll:  24<sup>th</sup> January, 2023</h2></li>
 </ol>
 
