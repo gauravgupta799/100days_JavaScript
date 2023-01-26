@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline:none;
+    font-family:"Roboto Mono", monospace;
+    font-weight: 400;
+    color:#010120;
+}
+body{
+    height: 100vh;
+    background: #05534f;
+}   
+.wrapper{
+    width: 40%;
+    min-width: 550px;
+    padding: 30px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border-radius:0.5rem;
+    transform:translate(-50%,-50%) ;
+    background-color: #ffffff;
+}
+.output{
+    background-color: #eef3f8;
+    width: 100%;
+    min-height: 250px;
+    padding: 20px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    position:relative;
+    display: grid;
+    place-items: center;
+}
+#blob{
+   height: 300px;
+   width: 300px; 
+   background-color: #025eaa;
+   /* background: linear-gradient(#44a2f0, #025eaa); */
+   box-shadow:15px 20px 30px rgba(0,0,0,0,0.15);
+}
+.dimensions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+label{
+    font-weight: 500;
+}
+input[type="number"]{
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 0.2rem;
+    border:1px solid #a0a0b0;
+}
+input[type="number"]:focus{
+    background-color:#f1f5fa;
+    border-color:#025eaa;
+    color:#025eaa;
+}
+.sliders{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:20px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px 5px;
+    font-size:14px;
+    border:none;
+    background-color: #f1eff9;
+    border-radius: 3px;
+}
+#copy{
+    width: 12%;
+    padding: 10px 12px;
+    border:none;
+    background-color: #025eaa;
+    color:#ffffff;
+    border-radius: 3px;
+    font-size:14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+#copy:hover{
+    cursor:pointer;
+    background-color:#08497d;
+}
+.bottomContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 50px;
+}
+input[type="color"]{
+    cursor:pointer;
+    width: 80px;
+    height: 35px;
+}
