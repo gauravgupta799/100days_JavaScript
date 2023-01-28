@@ -9,5 +9,6 @@
  <li><h2> Dice Roll:  24<sup>th</sup> January, 2023</h2></li>
  <li><h2> Blob Maker:  26<sup>th</sup> January, 2023</h2></li>
  <li><h2> EMoji Maker:  27<sup>th</sup> January, 2023</h2></li>
+ <li><h2> Star Rating:  28<sup>th</sup> January, 2023</h2></li>
 </ol>
 
