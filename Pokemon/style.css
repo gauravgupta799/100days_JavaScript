@@ -19,7 +19,7 @@ body{
     width: 100%;
     padding: 30px 20px;
     border:1px solid black;
-    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36% );
+    /* background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36% ); */
     box-shadow: 0 20px 30px rgba(0,0,0,0.15);
     border-radius:10px;
 }
@@ -28,6 +28,8 @@ body{
     width: 180px    max-height 200px;
     position:relative;
     margin: 20px auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 .hp{
     width: 80px;
@@ -54,7 +56,9 @@ body{
     font-weight: 600;
 }
 .types span {
- padding: 5px 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color:#ffffff;
 }
 .stats{
     display: flex;
@@ -75,4 +79,11 @@ body{
     margin: 30px auto;
     border:none;
     border-radius:5px ;
+    border:1px solid black;
+    transition: all 0.5s ease;
+}
+#btn:hover{
+    cursor:pointer;
+    background: #eff3ff;
+    color:black;
 }
