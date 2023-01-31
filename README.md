@@ -12,5 +12,6 @@
  <li><h2> Star Rating:  28<sup>th</sup> January, 2023</h2></li>
  <li><h2> To Do List:  29<sup>th</sup> January, 2023</h2></li>
  <li><h2> RGB Color Slider:  30<sup>th</sup> January, 2023</h2></li>
+ <li><h2> Pokemon Generator:  31<sup>th</sup> January, 2023</h2></li>
 </ol>
 
