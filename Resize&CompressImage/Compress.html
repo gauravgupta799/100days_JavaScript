@@ -16,29 +16,30 @@
             <!-- <i class="uil uil-cloud-upload"></i> -->
             <p>Browse File to Upload</p>
         </div>
-        <div class="inputWrapper">
-            <div class="width">
-                <label for="width">Width</label>
-                <input type="number">
+        <div class="content">
+            <div class="inputWrapper">
+                <div class="width">
+                    <label for="width">Width</label>
+                    <input type="number">
+                </div>
+                <div class="height">
+                    <label for="height">Height</label>
+                    <input type="number">
+                </div>
             </div>
-            <div class="height">
-                <label for="height">Height</label>
-                <input type="number">
+            <div class="checkboxWrapper">
+                <div class="left ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="aspect" >Lock aspect ratio</label>
+                </div>
+                <div class="right quality">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">Reduce quality</label>
+                </div>
             </div>
+            <button id="btn">Download Image</button>
         </div>
-        <div class="checkboxWrapper">
-            <div class="left">
-                <input type="checkbox" checked>
-                <label for="aspect" >Lock aspect ratio</label>
-            </div>
-            <div class="right">
-                <input type="checkbox">
-                <label for="quality">Reduce quality</label>
-            </div>
-        </div>
-        <button id="btn">Download Image</button>
-    </div>
-    
+    </div>  
     <script src="Compress.js"></script>
 </body>
 </html>
