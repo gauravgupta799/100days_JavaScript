@@ -16,6 +16,7 @@
  <li><h2> Country Info App:  01<sup>th</sup> February, 2023</h2></li>
  <li><h2> Age Calculator App:  03<sup>th</sup> February, 2023</h2></li>
  <li><h2> File Downloader:  06<sup>th</sup> February, 2023</h2></li>
- <li><h2> Draggable Slider Tabs:  06<sup>th</sup> February, 2023</h2></li>
+ <li><h2> Draggable Slider Tabs:  07<sup>th</sup> February, 2023</h2></li>
+ <li><h2> Resize and Compress Image:  08<sup>th</sup> February, 2023</h2></li>
 </ol>
 

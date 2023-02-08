@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(28, 24, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.container{
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container.active .imageWrapper{
+    border:none;
+}
+.imageWrapper{
+    width: 100%;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #afafaf;
+}
+.imageWrapper #fileInput{
+    display: none;
+}
+.imageWrapper p{
+    font-size: 1.06rem;
+    letter-spacing: 0.5px;
+}
+.imageWrapper.active p{
+    display: none;
+}
+.imageWrapper img{
+    width: 50px;
+    height:50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+ .imageWrapper.active img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.inputWrapper, .checkboxWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 1rem auto;
+    width: 100%;
+}
+.inputWrapper input{
+    width: 140px;
+    height: 40px;
+    font-size:1.2rem;
+    padding: 10px;
+    margin-top: 3px;
+    outline:none;
+    background-color: transparent;
+}
+.inputWrapper input:focus{
+    border: 1px solid rgb(63, 63, 199);
+}
+.inputWrapper label{
+    font-size:1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.checkboxWrapper{
+    justify-content: flex-start;
+}
+.left, .right{
+    width: 100%;
+}
+/* .checkboxWrapper input[type="checkbox"]{
+  padding: 5px;
+} */
+.checkboxWrapper label{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+#btn{
+    width: 100%;
+    height: 40px;
+    border-radius:20px;
+    border:none;
+    background-color: #3f63f0;
+    font-size: 1.1rem;
+    color:white;
+    letter-spacing: 0.5px;
+    border: 2px solid #3f63f0;
+    transition:0.5s ease;
+}
+#btn:hover{
+    background-color: #ffffff;
+    color:#3f63f0;
+    cursor: pointer;
+}
