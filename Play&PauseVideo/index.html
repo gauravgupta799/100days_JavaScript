@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play and Pause Video</title>
+    <style>
+        .button {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+        .button:hover {
+                fill: white;
+        }
+        .defs {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        iframe {
+            float: left;
+            width: 300px;
+            height: 200px;
+        }
+        .buttons {
+            padding: 1rem;
+            background: #f06d06;
+            float: left;
+        }
+        body {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="url" id="url" placeholder="Enter Youtube Video URL" required>
+        <button>Embed Video</button>
+    </form>
+    <div id="player-container" class="center">
+        <div id="player"></div><br>
+    </div>
+    </div>
+    <div>
+    <button onclick="pauseVideo()" class="pauseButton">Pause</button>
+    <button onclick="playVideo()" class="playButton">Play</button>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</body>
+</html>
